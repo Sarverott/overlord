@@ -69,7 +69,7 @@ class OverlordFtp():
     def updateApp(self, zipFilePath):
         self.clearWebapp()
         with open(zipFilePath, 'rb') as file:
-            self.ftpHook.storbinary('STOR '+self.rootPath+"/"++OverlordFtp.zipPackage, file)
+            self.ftpHook.storbinary('STOR '+self.rootPath+"/"+OverlordFtp.zipPackage, file)
         self.writeMinimalInstaller()
 
     def lounchServerSideAct(self, appname):
