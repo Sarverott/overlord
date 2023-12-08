@@ -24,16 +24,16 @@ class OverlordFtp():
         phpScript=io.BytesIO()
         phpScript.write(b'<?php \n\r')
         phpScript.write(b'system("unzip -oq ')
-        phpScript.write(bytes(Overlord_ftp.zipPackage))
+        phpScript.write(bytes(OverlordFtp.zipPackage))
         phpScript.write(b' -d /");\n\r')
         phpScript.write(b'unlink("')
-        phpScript.write(bytes(Overlord_ftp.zipPackage))
+        phpScript.write(bytes(OverlordFtp.zipPackage))
         phpScript.write(b'");\n\r')
         phpScript.write(b'unlink(__FILE__);\n\r')
         phpScript.write(b'echo "OK";\n\r')
         phpScript.write(b'die();\n\r')
         phpScript.seek(0)
-        self.ftpHook.storbinary('STOR '+self.rootPath+"/"+Overlord_ftp.phpInstaller, phpScript)
+        self.ftpHook.storbinary('STOR '+self.rootPath+"/"+OverlordFtp.phpInstaller, phpScript)
 
     def config(self, host, username, password):
         self.ftpHost=host
@@ -69,10 +69,10 @@ class OverlordFtp():
     def updateApp(self, zipFilePath):
         self.clearWebapp()
         with open(zipFilePath, 'rb') as file:
-            self.ftpHook.storbinary('STOR '+self.rootPath+"/"++Overlord_ftp.zipPackage, file)
+            self.ftpHook.storbinary('STOR '+self.rootPath+"/"++OverlordFtp.zipPackage, file)
         self.writeMinimalInstaller()
 
     def lounchServerSideAct(self, appname):
         appDomain=".".join(appname.split("_"))
-        result=requests.get("http://"+appDomain+"/"+Overlord_ftp.phpInstaller)
+        result=requests.get("http://"+appDomain+"/"+OverlordFtp.phpInstaller)
         return (result.text, result)
