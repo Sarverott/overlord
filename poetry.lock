@@ -283,6 +283,17 @@ test = ["certifi (>=2024)", "cryptography-vectors (==44.0.1)", "pretend (>=0.7)"
 test-randomorder = ["pytest-randomly"]
 
 [[package]]
+name = "darkpoint"
+version = "0.2.0"
+description = "This Python framework is technomantic mnemonic toolkit of thought model system with singular principles that allows to create memory palace with start placing in darkness."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "darkpoint-0.2.0-py3-none-any.whl", hash = "sha256:3f007cf156dc4c3bc6b480920976cd6da0060f3ce864ae1f8282aaf8e2b85bf9"},
+    {file = "darkpoint-0.2.0.tar.gz", hash = "sha256:ead9525785224a0cfb499817a952108a316600f0f1651d73a20baccc91a9c09c"},
+]
+
+[[package]]
 name = "gitdb"
 version = "4.0.12"
 description = "Git Object Database"
@@ -520,4 +531,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "1c62ae4c55e5313eaa3cb88bb206eda86e955c8ccb53d2f6c4264b4d491cd817"
+content-hash = "e40ae7e30ad7ac9402c360aef48ad02875e2327a8d067997b1ac49a10cba45a1"

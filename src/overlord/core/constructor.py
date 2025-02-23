@@ -20,12 +20,19 @@ class Overlord:
     infectRepo = inject.infectRepo
     loadPackData = package.loadPackData
 
+    gitDesc = inject.upwriteDescription
+
+    def createCraftStorage():
+        os.mkdir()
+
     def __init__( self, projectPath ):
 
         #self.path = Path(__file__).parent.parent.parent.resolve()
         self.repoPath = projectPath
         self.loadConfig(projectPath)
         self.loadPackData()
+        
+        self.gitDesc()
 
 
 

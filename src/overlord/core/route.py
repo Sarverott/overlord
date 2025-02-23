@@ -20,5 +20,8 @@ def OverlordDir():
 def PyProject():
     return OverlordDir() / "pyproject.toml" # REPO:/packageData.py
 
-def StandardHooks(projectDir):
-    return projectDir / ".git" / "hooks"
+def GitHooksDir(projectDir):
+    return Path(projectDir) / ".git" / "hooks"
+
+def GitDescription(projectDir):
+    return Path(projectDir) / ".git" / "description"
