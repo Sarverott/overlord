@@ -1,0 +1,16 @@
+[
+    "pre-applypatch.sample",
+    "fsmonitor-watchman.sample",
+    "pre-push.sample",
+    "push-to-checkout.sample",
+    "pre-rebase.sample",
+    "sendemail-validate.sample",
+    "prepare-commit-msg.sample",
+    "update.sample",
+    "pre-merge-commit.sample",
+    "pre-receive.sample",
+    "commit-msg.sample",
+    "applypatch-msg.sample",
+    "post-update.sample",
+    "pre-commit.sample"
+]

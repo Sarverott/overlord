@@ -1,0 +1,18 @@
+{
+    "self":{
+        "configPath":"",
+        "mode":"overlord",
+        "repo":"",
+        "created":""
+    },
+    "overlord":{
+        "mode":"overlord",
+        "repo":"",
+        "created":""
+    },
+    "zergs":{
+        "hash1":"link",
+        "hash2":"link",
+        "hash3":"link"
+    }
+}
