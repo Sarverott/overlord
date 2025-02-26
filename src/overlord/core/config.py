@@ -2,7 +2,12 @@ import configparser
 from pathlib import Path
 import json
 
-from core import route
+#from . import config
+from . import package
+#from . import getArguments
+from . import inject
+from . import route
+#from core import route
 
 #import venv
 #import zipapp

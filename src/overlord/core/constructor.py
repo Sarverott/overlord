@@ -1,12 +1,14 @@
 import git
 import os
 
+from . import *
 
-from core import config
-from core import package
-from core import getArguments
-from core import inject
-from core import route
+
+from . import config
+from . import package
+#from . import getArguments
+from . import inject
+from . import route
 
 #from dataclasses import dataclass
 

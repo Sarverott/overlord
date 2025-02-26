@@ -23,5 +23,8 @@ def PyProject():
 def GitHooksDir(projectDir):
     return Path(projectDir) / ".git" / "hooks"
 
+
+
 def GitDescription(projectDir):
     return Path(projectDir) / ".git" / "description"
+

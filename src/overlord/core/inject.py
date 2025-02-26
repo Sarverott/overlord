@@ -3,8 +3,11 @@ from pathlib import Path
 import os
 import json
 
-from core import route
-
+from . import config
+from . import package
+#from . import getArguments
+#from . import inject
+from . import route
 
 import hashlib
 
@@ -27,6 +30,28 @@ def RecordHooks(repopath):
     return (hooksRecord)
 
 
+def RecordMeetedHooks(repopath):
+    
+    hooksPath = route.GitHooksDir(repopath)
+
+    #hooksdir = Path(repopath)
+
+    hooks = os.listdir(hooksPath)
+    hooksRecord = dict()
+    for hook in hooks:
+        with open( os.path.join(hooksPath, hook), "r") as hookContent:
+            hooksRecord[hook] = hookContent.read()
+            
+    with open( os.path.join(hooksPath, ".backup_hooks_entumbed.json"), "w+" ) as record:
+        record.write(json.dumps(hooksRecord, indent=4))
+    return (
+        str(repopath), 
+        str(os.path.join(repopath, "data", "githooks.lastrepo.json"))
+        #str(Path(__file__).parent / "standard_githook_hash.json")
+    )
+
+
+
 def RecordStandardHooks(repopath):
     
     hooksPath = route.GitHooksDir(repopath)
@@ -46,6 +71,7 @@ def RecordStandardHooks(repopath):
         str(os.path.join(repopath, "data", "standard_githooks.json")),
         str(Path(__file__).parent / "standard_githook_hash.json")
     )
+
 
 def listHooks(self):
     hooksPath = route.GitHooksDir(route.OverlordDir())
@@ -79,6 +105,7 @@ def infectRepo(self, repopath):
         print( hooksdir )
         hooks = os.listdir(hooksdir)
 
+        hooks
         
                   
     else:
