@@ -1,4 +1,4 @@
 [submodule "default_overlord_data"]
-	branch = origin/master
+	branch = master
 	path = src/overlord/data
 	url = https://gist.github.com/4e20dae5b1442be87eb88214c3326a45.git
