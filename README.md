@@ -6,4 +6,4 @@ Guard and supervisor for automation of repetitive actions on servers. Main targe
 - includes [DATA files](https://gist.github.com/4e20dae5b1442be87eb88214c3326a45.git) 
     - as [sublodule](./.gitmodules) 
     - included linked by [data.lnk](./data.lnk) 
-    - of internal path [src/overlord/data](./src/overlord/data/)
+    - of internal path [src/overlord/data](./src/overlord/#folder-row-3)
