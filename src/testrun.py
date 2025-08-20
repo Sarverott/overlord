@@ -1,5 +1,8 @@
 import overlord
+import overlord.core
 #import os
 
 
-print(overlord)
+paracite = Overlord(os.getcwd())
+
+print(overlord.)

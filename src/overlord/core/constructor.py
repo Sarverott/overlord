@@ -1,7 +1,7 @@
 import git
 import os
 
-from . import *
+#from . import *
 
 
 from . import config

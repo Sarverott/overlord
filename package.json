@@ -1,0 +1,28 @@
+{
+  "name": "overlord",
+  "version": "1.0.0",
+  "description": "overlord toolkit",
+  "keywords": [
+    "overlord",
+    "biome",
+    "setternet"
+  ],
+  "homepage": "https://github.com/Sarverott/overlord#readme",
+  "bugs": {
+    "url": "https://github.com/Sarverott/overlord/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarverott/overlord.git"
+  },
+  "license": "MIT",
+  "author": "Sett Sarverott",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "task"
+  }
+}
