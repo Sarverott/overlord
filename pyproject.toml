@@ -83,4 +83,5 @@ gitpython = "^3.1.44"
 pyyaml = "^6.0.2"
 requests = "^2.32.3"
 darkpoint = "^0.2.0"
+go-task-bin = "^3.44.1"
 
