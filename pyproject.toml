@@ -2,50 +2,7 @@
 authors = [
   {name = "Sett Sarverott", email = "sett@sarverott.com"},
 ]
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-  "Operating System :: OS Independent",
-  "Natural Language :: English",
-  "Natural Language :: Polish",
-  "Development Status :: 1 - Planning",
-  "Environment :: Plugins",
-  "Environment :: Console",
-  "Intended Audience :: Developers",
-  "Intended Audience :: Education",
-  "Intended Audience :: Science/Research",
-  "Intended Audience :: Religion",
-  "Programming Language :: Python :: Implementation",
-  "Programming Language :: Python",
-  "Topic :: Adaptive Technologies",
-  "Topic :: Artistic Software",
-  "Topic :: Communications",
-  "Topic :: Database",
-  "Topic :: Education",
-  "Topic :: Religion",
-  "Topic :: Scientific/Engineering",
-  "Topic :: Scientific/Engineering :: Artificial Intelligence",
-  "Topic :: Scientific/Engineering :: Artificial Life",
-  "Topic :: Scientific/Engineering :: Information Analysis",
-  "Topic :: Scientific/Engineering :: Physics",
-  "Topic :: Scientific/Engineering :: Visualization",
-  "Topic :: Sociology",
-  "Topic :: Sociology :: History",
-  "Topic :: Software Development",
-  "Topic :: Software Development :: Documentation",
-  "Topic :: Software Development :: Libraries",
-  "Topic :: Software Development :: Libraries :: Python Modules",
-  "Topic :: Software Development :: Libraries :: Application Frameworks",
-  "Topic :: System",
-  "Topic :: System :: Archiving",
-  "Topic :: System :: Archiving :: Compression",
-  "Topic :: System :: Clustering",
-  "Topic :: System :: Emulators",
-  "Topic :: System :: Filesystems",
-  "Topic :: System :: Networking",
-  "Topic :: System :: Operating System",
-  "Topic :: System :: Software Distribution",
-]
+
 description = "like zerg infection it reaches all parts of space with it's organic behaviour"
 keywords = ["dark", "darkness", "memory"]
 license = {file = "LICENSE"}
@@ -54,18 +11,43 @@ maintainers = [
 ]
 name = "overlord"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 version = "0.2.0"
+dependencies = [
+    "bcrypt==4.2.1",
+    "certifi==2025.1.31",
+    "cffi==1.17.1",
+    "charset-normalizer==3.4.1",
+    "chromadb",
+    "cproto==0.7.2",
+    "crewai",
+    "cryptography==44.0.1",
+    "gitdb==4.0.12",
+    "gitpython==3.1.44",
+    "idna==3.10",
+    "langchain",
+    "langfuse",
+    "langgraph",
+    "mcp[cli]",
+    "memlayer",
+    "ollama",
+    "openai",
+    "paramiko==3.5.1",
+    "podman==5.4.0.1",
+    "poetry>=2.2.1",
+    "pycparser==2.22",
+    "pynacl==1.5.0",
+    "pyyaml==6.0.2",
+    "requests==2.32.3",
+    "smmap==5.0.2",
+    "urllib3==2.3.0",
+    "websocket-client==1.8.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/sarverott/overlord"
 Issues = "https://github.com/sarverott/overlord/issues"
 
-[build-system]
-build-backend = "setuptools.build_meta"
-requires = [
-  "setuptools >= 40.9.0",
-]
 
 [tool.poetry]
 name = "overlord"
